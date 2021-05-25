@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+}
+header {
+    background-color: rgb(242, 244, 235);
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../images/background.jpg");
+    background-repeat: no-repeat;
+    height:100vh;
+    background-size: cover;
+    overflow: hidden;
+}
+.logo{
+    height: 35vh;
+    width: 25vw;
+}
+.nav-ul {
+    float: right;
+    margin-top: 5vw;
+    margin-right: 4vw;
+}
+.nav-ul li {
+    display: inline-block;
+    list-style: none;
+}
+.nav-ul a {
+    text-decoration: none;
+    margin-left: 3vh;
+    padding: 1vw;
+    color: white;
+    border: solid;
+    border-radius: 10px;
+    border-color: transparent;
+}
+.nav-ul a:hover{
+    border-color: yellow; 
+}
+.quotes {
+    margin-top: 8vw;
+    font-size: 35px;
+    line-height: 45px;
+    color: white;
+    margin-left:5vh;
+}
+.blink {
+     animation: chang 1s infinite;
+}
+.moon {
+    position: absolute;
+    margin-top:9vh;
+    right:3vh;
+    width:2vw;
+    height:5vh;
+    border:solid;
+    border-radius: 50%;
+    border-color:transparent;
+    
+}
+.moon:hover{
+    background-color: black;
+    border-color: chartreuse;
+}
+.about-beggining {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-para {
+    font-size: 8vh;
+    font-weight: bold;
+}
+@keyframes chang {
+    0% {color:yellow;}
+    25%{color: purple;}
+    50%{color:yellow;}
+    100%{color: purple;}
+}

@@ -1,13 +1,12 @@
 body {
     margin: 0;
 }
-header {
-    background-color: rgb(242, 244, 235);
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../images/background.jpg");
-    background-repeat: no-repeat;
-    height:100vh;
-    background-size: cover;
-    overflow: hidden;
+p {
+    font-size: 20px;
+    line-height: 5vh;
+}
+h1{
+    margin-top: 5vw;
 }
 .logo{
     height: 35vh;
@@ -16,7 +15,7 @@ header {
 .nav-ul {
     float: right;
     margin-top: 5vw;
-    margin-right: 4vw;
+    margin-right:10vw;
 }
 .nav-ul li {
     display: inline-block;
@@ -45,33 +44,195 @@ header {
      animation: chang 1s infinite;
 }
 .moon {
-    position: absolute;
-    margin-top:9vh;
-    right:3vh;
-    width:2vw;
-    height:5vh;
+    margin-top: 10px;
+    background-color: transparent;
+    width: 6vh;
     border:solid;
     border-radius: 50%;
-    border-color:transparent;
-    
 }
 .moon:hover{
     background-color: black;
     border-color: chartreuse;
 }
-.about-beggining {
+#aboutus {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin-top:10vh;
+    margin-bottom: 10vh; 
 }
 .about-para {
     font-size: 8vh;
     font-weight: bold;
 }
+.abt {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.abt a {
+    text-decoration: none;
+    color: darkred;
+    font-weight: bold;
+}
+.abt button {
+    padding: 10px;
+    background-color: rgba(194, 214, 15, 0.919);
+    margin-top: 8vh;
+    
+
+}
+.back-to-home{
+    background-color: darkgoldenrod;
+}
+.prior {
+    color: blueviolet;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.ab {
+    margin-right: 30px;
+    border: solid;
+    border-radius: 2%;
+    border-color: #6df919cf;
+}
+#home {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(242, 244, 235);
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../images/background.jpg");
+    background-repeat: no-repeat;
+    height:100vh;
+    background-size: cover;
+    overflow:hidden;
+    margin-bottom: 10vh;
+}
+#services {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.amz-services{
+    display: flex;
+    margin:5vw;
+    align-items: center;
+    justify-content: space-between;
+}
+.amz-services1{
+    text-align: center;
+    background-color: rgba(199, 250, 13, 0.905);
+    border:solid;
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 5vh;
+}
+.amz-services2{
+    text-align: center;
+    background-color: rgba(32, 197, 17, 0.837);
+    border:solid;
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 5vh;
+}
+.amz-services3{
+    text-align: center;
+    background-color: rgb(197, 146, 17);
+    border:solid;
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 5vh;
+}
+.view {
+    display: none;
+    height: 50px;
+    width: 80px;
+}
+
 @keyframes chang {
     0% {color:yellow;}
     25%{color: purple;}
     50%{color:yellow;}
     100%{color: purple;}
+}
+@media only screen and (max-width:1156px) {
+    .abt p {
+        font-size: 15px;
+    }
+    .amz-services {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:1057px) {
+    .nav-ul a {
+        margin-left: 1vh;
+    }
+    .nav-ul {
+        margin-right: 5vw;
+    }
+}
+@media only screen and (max-width:996px) {
+    
+    .ab {
+        width: 40vw;
+        height: 40vh;
+    }
+}
+
+@media only screen and (max-width:906px) {
+    .quotes {
+        font-size: 25px;
+    }
+    
+}
+@media only screen and (max-width:884px) {
+    .ab {
+        margin-right: 10px;
+        width: 45vw;
+        height: 50vh;
+    }
+    .abt {
+        flex-direction: column;
+    }
+    .abt p {
+        text-align: center;
+    }
+    .abt button {
+        padding: 5px;
+        margin: 5vh 25vw;
+    }
+    .about-para {
+          font-size: 4vh;
+    }
+    .nav-ul {
+        display: none;
+    }
+    .view {
+        display:block;
+        float: right;
+        margin-right: 30px;
+        margin-top: 25px;
+    }
+    .logo {
+        height: 40vh;
+        width: 40vw;
+        margin-left: 20vw;
+    }
+    .nav-ul {
+        display: block;
+        margin-top: 10px;
+        float:right;
+        margin-right: 25px;
+    }
+    .nav-ul li {
+        display: block;
+        margin-top: 20px;
+
+    }
 }

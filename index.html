@@ -5,33 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css"
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header id="home">
         <nav>
             <img class="logo" src="images/Frame 4.png" > 
-            <ul class="nav-ul">
-               <li><a href="#">HOME</a></li>
-               <li><a href="#">ABOUT US</a></li>
-               <li><a href="#">SERVICES</a></li>
-               <li><a href="#">MENU</a></li>
-               <li><a href="#">CONTACT US</a></li>
+            <ul class="nav-ul" id="show">
+               <li><a href="#home">HOME</a></li>
+               <li><a href="#aboutus">ABOUT US</a></li>
+               <li><a href="#services">SERVICES</a></li>
+               <li><a href="#menu">MENU</a></li>
+               <li><a href="#contactus">CONTACT US</a></li>
+               <li><a><img class="moon" src="images/dark.png"></a></li>
             </ul>
-            <img class="moon" src="images/dark.png">
-        </nav>
+            <a href="#" class="view" onclick="hamburger()"><img src="images/menu (2).png"></a>
+            
         <p class="quotes">
             WELCOME TO <span class="blink">DILKASH KHURAK</span>.<br>
             WE ALWAYS GIVE PEOPLE MORE THAN WHAT THEY EXPECT 
         </p>
     </header>
     <main>
-        <div class="about-beggining">
+        <div id="aboutus">
          <h1>ABOUT US</h1>
          <p class="about-para">WE COOK THE BEST AND SAFE FOR U</p>
-         <h4>We cook the best food in this city we cherrish ur food with our love     .<br>
-        And we deliver your food very safetly with proper sanitization our first priority is ur heath</h4>
+         <div class="abt">
+            <img class="ab" src="images/c123.webp">
+            <p> We cook the best food in this city we cherrish ur food with our love     .<br>
+           And we deliver your food very safetly with proper sanitization <br>
+            <span class="prior">Our First Priority Is Ur Heath</span><br>
+            <button><a href="#home"> HOME PAGE</a></button>
+            </p>
+
+         </div>
+        </div>
+        <div id="services">
+              <h2>Offering</h2>
+              <h1>OUR AMAZING SERVICES</h1>
+              <div class="amz-services">
+                  <div class="amz-services1">
+                    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/fork-and-knife-with-plate_1f37d-fe0f.png">
+                    <h2>EXCELLENT FOOD</h2>
+                    <p>
+                        we offer our client<br>
+                        best quality food at cheaper price<br>
+                        we have quality service since many years
+                    </p>
+                  </div>
+                  <div class="amz-services2">
+                    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/hamburger_1f354.png">
+                    <h2>FAST FOOD</h2>
+                    <p>
+                        we offer our client<br>
+                        best quality food at cheaper price<br>
+                        we have quality service since many years
+                    </p>
+                  </div>
+                  <div class="amz-services3">
+                    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/bus_1f68c.png">
+                    <h2>SAFE DELIVERY</h2>
+                    <p>
+                        we offer our client<br>
+                        best quality food at cheaper price<br>
+                        we have quality service since many years
+                    </p>
+                  </div>
+              </div>
         </div>
     </main>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="dilkash.js"></script>
 </body>
+
 </html>
